@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment_Detector</title>
+    <style>
+        .contain{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+       <h1>Sentiment Analysis</h1>
+       <form action="" method="POST">
+        <label for="Sentiment"></label>
+        <input type="text" name="text" id="Sentiment" placeholder="Enter Sentiment" required>
+        <button type="submit">submit</button>
+       </form>
+       {% if sentiment %}
+       <div class="res">
+        {{sentiment}}
+       </div>
+       {% endif %}
+    </div>
+</body>
+</html>
